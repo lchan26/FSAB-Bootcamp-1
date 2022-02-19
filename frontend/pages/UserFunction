@@ -1,0 +1,29 @@
+//     // function UserProfile() should go into a new component and
+//     // call it in the bottom-most return statement in this home file
+// import {useState, useEffect} from "react";
+// import axios from "axios";
+// import Post from "../components/Post";
+
+// function UserProfile() {
+//     const [post, setPost] = useState<any[]>([]);
+//     const [isLoading, setIsLoading] = useState(true); // should be true by default
+
+//     useEffect(() => {
+//         // fetch data here
+//         axios.get('http://localhost:8080/posts')
+//             .then((response) => {
+//                 // handle success
+//                 setPost(response.data);
+//                 setIsLoading(false);
+//             })
+//             .catch((error) => {
+//                 // handle error
+//                 console.log(error);
+//             })
+//     }, []);
+
+//     return 
+//     !isLoading? 
+//     (!isLoading && post?.map(p => <Post key = {p._id} title={p.title} body={p.body} createdAt={p.createdAt}>)))
+//     : <h1>Loading posts…</h1>
+// }
